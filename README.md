@@ -6,7 +6,7 @@ REST-Rant is an app where users can review restaurants.
 
 ### Running tests
 
-To run tests run this command:n `npm run test`
+To run tests run this command: `npm run test`
 
 ### Routes table
 
