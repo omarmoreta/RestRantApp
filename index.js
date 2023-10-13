@@ -1,7 +1,11 @@
 require("dotenv").config();
 const express = require("express");
+const placesController = require("./controllers/places");
 const app = express();
 const PORT = process.env.PORT;
+
+// middleware
+app.use("/places", placesController);
 
 // GET / (home/base url)
 app.get("/", (req, res) => {
