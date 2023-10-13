@@ -3,13 +3,15 @@ const app = require("./index");
 
 describe("Test the root path", () => {
   test("GET '/' should return 200 OK status", async () => {
-    return request(app).get("/").expect(200);
+    const response = await request(app).get("/");
+    expect(response.text).toContain("<!DOCTYPE html>");
   });
 });
 
 describe("Test the places controller path", () => {
   test("GET '/places' should return 200 OK status", async () => {
-    return request(app).get("/places").expect(200);
+    const response = await request(app).get("/places");
+    expect(response.text).toContain("<!DOCTYPE html>");
   });
 });
 

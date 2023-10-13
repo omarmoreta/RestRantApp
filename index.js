@@ -9,7 +9,7 @@ app.use("/places", placesController);
 
 // GET / (home/base url)
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.render("Home");
 });
 
 // GET /* (wildcard/catch-all route)
