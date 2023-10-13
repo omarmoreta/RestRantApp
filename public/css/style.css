@@ -9,7 +9,7 @@ p {
   color: gray;
 }
 
-img {
+#homeImg {
   margin-top: 10px;
   margin-bottom: 10px;
   display: block;
@@ -18,13 +18,16 @@ img {
   width: 30%;
 }
 
+.placesImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .btn-primary {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-}
-
-.credit {
-  text-align: center;
 }
