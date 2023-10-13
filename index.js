@@ -3,8 +3,11 @@ const placesController = require("./controllers/places");
 const { createEngine } = require("express-react-views");
 const app = express();
 
+app.set("views", __dirname + "/views");
 app.set("view engine", "jsx");
 app.engine("jsx", createEngine());
+app.use(express.static("public"));
+
 app.use("/places", placesController);
 
 // GET / (home/base url)
