@@ -2,9 +2,12 @@
   "name": "rest_rant",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "jest --colors"
+  },
+  "nodemonConfig": {
+    "ext": "jsx,js,json,html"
   },
   "keywords": [],
   "author": "",
