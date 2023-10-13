@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
 // GET /* (wildcard/catch-all route)
 app.get("*", (req, res) => {
-  res.status(404).send("<h1>404 Not Found Page</h1>");
+  res.status(404).render("error404");
 });
 
 module.exports = app;
