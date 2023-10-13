@@ -1,8 +1,10 @@
 const express = require("express");
 const placesController = require("./controllers/places");
+const { createEngine } = require("express-react-views");
 const app = express();
 
-// middleware
+app.set("view engine", "jsx");
+app.engine("jsx", createEngine());
 app.use("/places", placesController);
 
 // GET / (home/base url)
