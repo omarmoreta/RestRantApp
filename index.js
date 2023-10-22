@@ -12,7 +12,7 @@ app.use("/places", placesController);
 
 // GET / (home/base url)
 app.get("/", (req, res) => {
-  res.render("Home");
+  res.render("home");
 });
 
 // GET /* (wildcard/catch-all route)
